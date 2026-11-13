@@ -1,0 +1,59 @@
+{
+  "name": "clawgrab-mcp",
+  "version": "1.1.0",
+  "mcpName": "com.getclawgrab/clawgrab",
+  "description": "MCP server for ClawGrab: get transcripts from public YouTube, TikTok, Vimeo, SoundCloud and other video links",
+  "main": "dist/index.js",
+  "bin": {
+    "clawgrab-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "echo 'No build step needed \u2014 dist/index.js is pre-compiled'",
+    "start": "node dist/index.js",
+    "dev": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "transcript",
+    "video-transcript",
+    "youtube",
+    "tiktok",
+    "vimeo",
+    "soundcloud",
+    "clawgrab",
+    "ai",
+    "summarize"
+  ],
+  "author": "Eric West <hello@getclawgrab.com> (https://getclawgrab.com)",
+  "license": "MIT",
+  "homepage": "https://getclawgrab.com",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "manifest.json",
+    "server.json"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "dotenv": "^16.4.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getclawgrab/clawgrab-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/getclawgrab/clawgrab-mcp-server/issues"
+  }
+}
