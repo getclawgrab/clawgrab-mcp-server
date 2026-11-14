@@ -2,11 +2,11 @@
   "manifest_version": "0.2",
   "name": "clawgrab",
   "display_name": "ClawGrab",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Get the transcript of a public YouTube, TikTok, Vimeo, SoundCloud or podcast link. AI summaries, posts and quotes with a free account.",
   "long_description": "ClawGrab turns a public video or audio link into clean transcript text for your AI. Transcripts are free with no account. The AI tools (summary, social posts, blog draft, quotes, translation) need a free ClawGrab account token: 5 AI outputs a month free, unlimited on Pro ($12/month).",
   "author": {
-    "name": "Eric West",
+    "name": "ClawGrab",
     "email": "hello@getclawgrab.com",
     "url": "https://getclawgrab.com"
   },
@@ -18,25 +18,53 @@
     "url": "https://github.com/getclawgrab/clawgrab-mcp-server"
   },
   "license": "MIT",
-  "keywords": ["transcript", "youtube", "tiktok", "vimeo", "podcast", "video", "summarize"],
+  "keywords": [
+    "transcript",
+    "youtube",
+    "tiktok",
+    "vimeo",
+    "podcast",
+    "video",
+    "summarize"
+  ],
   "server": {
     "type": "node",
     "entry_point": "dist/index.js",
     "mcp_config": {
       "command": "node",
-      "args": ["${__dirname}/dist/index.js"],
+      "args": [
+        "${__dirname}/dist/index.js"
+      ],
       "env": {
         "CLAWGRAB_TOKEN": "${user_config.clawgrab_token}"
       }
     }
   },
   "tools": [
-    { "name": "get_transcript", "description": "Transcript of a public video or audio link (free, no account)" },
-    { "name": "summarize_text", "description": "Short bullet summary of transcript text (account)" },
-    { "name": "generate_social_posts", "description": "Social post drafts from transcript text (account)" },
-    { "name": "generate_blog_post", "description": "Blog post draft from transcript text (account)" },
-    { "name": "extract_quotes", "description": "3-5 quotable lines from transcript text (account)" },
-    { "name": "translate_transcript", "description": "Translate transcript text (account)" }
+    {
+      "name": "get_transcript",
+      "description": "Transcript of a public video or audio link (free, no account)"
+    },
+    {
+      "name": "summarize_text",
+      "description": "Short bullet summary of transcript text (account)"
+    },
+    {
+      "name": "generate_social_posts",
+      "description": "Social post drafts from transcript text (account)"
+    },
+    {
+      "name": "generate_blog_post",
+      "description": "Blog post draft from transcript text (account)"
+    },
+    {
+      "name": "extract_quotes",
+      "description": "3-5 quotable lines from transcript text (account)"
+    },
+    {
+      "name": "translate_transcript",
+      "description": "Translate transcript text (account)"
+    }
   ],
   "user_config": {
     "clawgrab_token": {
@@ -49,7 +77,13 @@
     }
   },
   "compatibility": {
-    "platforms": ["darwin", "win32", "linux"],
-    "runtimes": { "node": ">=18.0.0" }
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=18.0.0"
+    }
   }
 }

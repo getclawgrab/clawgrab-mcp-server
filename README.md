@@ -40,7 +40,7 @@ Without a token the AI tools return a short "sign up free" message instead of a 
 2. Exchange your email and password for your account token:
 
 ```bash
-curl -s -X POST https://getclawgrab.com/api/auth/login -H "Content-Type: application/json" -d "{\"email\":\"you@example.com\",\"password\":\"YOUR_PASSWORD\"}"
+curl -s -X POST https://getclawgrab.com/api/auth/login -H "Content-Type: application/json" -d "{\"email\":\"you@example.com\",\"password\":\"<your password>\"}"
 ```
 
 3. Copy the `token` value from the reply into `CLAWGRAB_TOKEN` (below). Treat it like a password.
@@ -98,6 +98,6 @@ Policy: https://getclawgrab.com/privacy
 
 ## About
 
-ClawGrab is an independent product by Eric West - hello@getclawgrab.com - https://getclawgrab.com
+ClawGrab - hello@getclawgrab.com - https://getclawgrab.com
 
 MIT licence.

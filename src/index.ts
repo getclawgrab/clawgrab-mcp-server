@@ -8,7 +8,7 @@ dotenv.config();
 
 const API_URL = (process.env.CLAWGRAB_API_URL || "https://getclawgrab.com").replace(/\/$/, "");
 const TIMEOUT = parseInt(process.env.CLAWGRAB_TIMEOUT || "60000", 10);
-const VERSION = "1.1.0";
+const VERSION = "1.1.1";
 // Optional: a free ClawGrab account token unlocks the AI tools (5 a month free, unlimited on Pro).
 const TOKEN = (process.env.CLAWGRAB_TOKEN || "").trim();
 
